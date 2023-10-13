@@ -147,7 +147,7 @@ nav li:hover .sublist {
 }
 
 .promo {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .promo ul {
@@ -175,9 +175,38 @@ nav li:hover .sublist {
   color: #9F7303;
 }
 
+.quote p {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: -50px;
+    left: -120px;
+    width: 920px;
+    height: 1px;
+    content: "";
+    background-color: #F5D581;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -50px;
+    left: -120px;
+    width: 920px;
+    height: 1px;
+    content: "";
+    background-color: #F5D581;
+  }
+}
+
 .review {
   min-width: 1110px;
   background-color: #F4EFE2;
+}
+
+.review__title {
+  font-size: 32px;
+  color:#9F7303;
 }
 
 .review_container {
@@ -191,7 +220,7 @@ nav li:hover .sublist {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 90px;
+  margin-bottom: 150px;
 
   &::after {
     position: absolute;
