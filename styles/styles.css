@@ -22,6 +22,7 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -89,16 +90,16 @@ img {
 .submenu {
   position: relative;
   margin-right: 60px;
-}
 
-.submenu::after {
-  position: absolute;
-  content: "";
-  width: 13px;
-  height: 9px;
-  background-image: url("../images/polygon1.svg");
-  right: -18px;
-  top: 11px;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 9px;
+    background-image: url("../images/polygon1.svg");
+    right: -18px;
+    top: 11px;
+  }
 }
 
 nav li .sublist {
@@ -146,56 +147,88 @@ nav li:hover .sublist {
   margin: 0 auto;
 }
 
+h1 {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 48px;
+}
+
 .promo {
   margin-bottom: 100px;
+
+  & h2 {
+    margin: 0;
+    margin-bottom: 60px;
+    font-size: 40px;
+    color: #9F7303;
+  }
+
+  & p {
+    color: #9F7303;
+  }
+
+  & ul {
+    padding-left: 18px;
+    list-style-image: url(../images/dot.svg);
+  }
+
+  & ul li {
+    padding-left: 8px;
+  }
+
+  & div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+  }
 }
 
-.promo ul {
-  padding-left: 18px;
-  list-style-image: url(../images/dot.svg);
-}
+.history {
+  margin-bottom: 110px;
 
-.promo ul li {
-  padding-left: 8px;
-}
+  & h2 {
+    font-size: 32px;
+   color: #9F7303;
+  }
 
-.promo div {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 75px;
+  & div {
+    display: grid;
+    grid-template-columns: 540px 540px;
+    gap: 30px;
+  }
 }
 
 .quote {
   width: 732px;
   margin: 0 auto;
-  margin-bottom: 120px;
+  margin-bottom: 130px;
   font-style: italic;
   font-size: 24px;
   line-height: 36px;
   color: #9F7303;
-}
 
-.quote p {
-  position: relative;
+  & p {
+    position: relative;
 
-  &::before {
-    position: absolute;
-    top: -50px;
-    left: -120px;
-    width: 920px;
-    height: 1px;
-    content: "";
-    background-color: #F5D581;
-  }
+    &::before {
+      position: absolute;
+      top: -50px;
+      left: -100px;
+      width: 920px;
+      height: 1px;
+      content: "";
+      background-color: #F5D581;
+    }
 
-  &::after {
-    position: absolute;
-    bottom: -50px;
-    left: -120px;
-    width: 920px;
-    height: 1px;
-    content: "";
-    background-color: #F5D581;
+    &::after {
+      position: absolute;
+      bottom: -50px;
+      left: -100px;
+      width: 920px;
+      height: 1px;
+      content: "";
+      background-color: #F5D581;
+    }
   }
 }
 
@@ -244,6 +277,11 @@ nav li:hover .sublist {
   font-family: "Montserrat", sans-serif, "Arial";
   font-size: 18px;
   line-height: 27px;
+
+  &:focus {
+    outline: none;
+  border: 1px solid #9F7303;
+  }
 }
 
 .review__form__name {
@@ -256,6 +294,11 @@ nav li:hover .sublist {
   font-family: "Montserrat", sans-serif, "Arial";
   font-size: 18px;
   line-height: 27px;
+
+  &:focus {
+    outline: none;
+    border: 1px solid #9F7303;
+  }
 }
 
 .review__form__button {
