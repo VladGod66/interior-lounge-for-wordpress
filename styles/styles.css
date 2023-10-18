@@ -152,7 +152,7 @@ img {
   }
 }
 
-.promo {
+.wysiwyg-wrapper-promo {
   margin-bottom: 100px;
 
   & h2 {
@@ -184,7 +184,7 @@ img {
   }
 }
 
-.history {
+.wysiwyg-wrapper-history {
   margin-bottom: 110px;
 
   & h2 {
@@ -199,7 +199,7 @@ img {
   }
 }
 
-.quote {
+.wysiwyg-wrapper-quote {
   width: 732px;
   margin: 0 auto;
   margin-bottom: 150px;
