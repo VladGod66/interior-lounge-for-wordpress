@@ -57,24 +57,60 @@ img {
     content: "";
     background-color: #F5D581;
   }
+
+  & li .sublist {
+    display: none;
+    position: absolute;
+    width: 170px;
+    min-height: 90px;
+    background-color: #ffffff;
+    padding: 0;
+    padding-top: 10px;
+    list-style: none;
+    box-shadow: 0 5px 8px 3px rgba(196, 196, 196, 0.18);
+    z-index: 1;
+  }
+
+  & li:hover .sublist {
+    display: block;
+  }
+
+  & ul li {
+    float: left;
+    position: relative;
+  }
 }
 
-.navigation_list {
+.navigation__list {
  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.navigation-item {
+.navigation__item {
   margin-right: 60px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &--submenu {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 13px;
+      height: 9px;
+      background-image: url("../images/polygon1.svg");
+      right: -18px;
+      top: 11px;
+    }
+  }
 }
 
-.navigation-item:last-child {
-  margin: 0;
-}
-
-.navigation_link {
+.navigation__link {
   text-decoration: none;
   color: #000000;
 
@@ -83,43 +119,19 @@ img {
   }
 }
 
-.sublist_item:first-child a {
+.navigation__link--button {
+  box-sizing: border-box;
+  min-width: 191px;
+  padding: 8px 34px;
+  border: 1px solid #9F7303;
+  border-radius: 8px;
+}
+
+.sublist__item:first-child a {
   color: #9F7303;
 }
 
-.submenu {
-  position: relative;
-  margin-right: 60px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 13px;
-    height: 9px;
-    background-image: url("../images/polygon1.svg");
-    right: -18px;
-    top: 11px;
-  }
-}
-
-nav li .sublist {
-  display: none;
-  position: absolute;
-  width: 170px;
-  min-height: 90px;
-  background-color: #ffffff;
-  padding: 0;
-  padding-top: 10px;
-  list-style: none;
-  box-shadow: 0 5px 8px 3px rgba(196, 196, 196, 0.18);
-  z-index: 1;
-}
-
-nav li:hover .sublist {
-  display: block;
-}
-
-.sublist_link {
+.sublist__link {
   padding-left: 10px;
   text-decoration: none;
   color: #000000;
@@ -129,28 +141,15 @@ nav li:hover .sublist {
   }
 }
 
-.nav ul li {
-  float: left;
-  position: relative;
-}
-
-.navigation_link--button {
-  box-sizing: border-box;
-  min-width: 191px;
-  padding: 8px 34px;
-  border: 1px solid #9F7303;
-  border-radius: 8px;
-}
-
-.main_container {
+.main__container {
   width: 1110px;
   margin: 0 auto;
-}
 
-h1 {
-  margin: 0;
-  margin-bottom: 60px;
-  font-size: 48px;
+  & h1 {
+    margin: 0;
+    margin-bottom: 60px;
+    font-size: 48px;
+  }
 }
 
 .promo {
