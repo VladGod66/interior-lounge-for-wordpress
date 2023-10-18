@@ -149,6 +149,7 @@ img {
     margin: 0;
     margin-bottom: 60px;
     font-size: 48px;
+    line-height: 59px;
   }
 }
 
@@ -159,11 +160,24 @@ img {
     margin: 0;
     margin-bottom: 60px;
     font-size: 40px;
+    line-height: 49px;
     color: #9F7303;
   }
 
-    & p {
+  & h3 {
+    font-size: 32px;
+    line-height: 39px;
     color: #9F7303;
+  }
+
+  & p {
+    color: #9F7303;
+    margin-bottom: 30px;
+  }
+
+  & span {
+    display: block;
+    margin-bottom: 30px;
   }
 
   & ul {
@@ -178,24 +192,10 @@ img {
   }
 
   & div {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-  }
-}
-
-.wysiwyg-wrapper-history {
-  margin-bottom: 110px;
-
-  & h2 {
-    font-size: 32px;
-   color: #9F7303;
-  }
-
-  & div {
     display: grid;
     grid-template-columns: 540px 540px;
     gap: 30px;
+    margin-bottom: 50px;
   }
 }
 
