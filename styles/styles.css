@@ -243,24 +243,17 @@ img {
   margin-bottom: 30px;
 }
 
-.review__form {
+.wpcf7-form {
   position: relative;
   display: flex;
+  min-height: 530px;
   flex-direction: column;
-  margin-bottom: 150px;
-
-  &::after {
-    position: absolute;
-    bottom: -75px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    content: "";
-    background-color: #F5D581;
-  }
+  margin-bottom: 80px;
+  border-bottom: 1px solid #F5D581;
 }
 
-.form__text {
+.wpcf7-textarea {
+  width: 100%;
   height: 160px;
   padding: 0;
   padding-top: 20px;
@@ -278,7 +271,7 @@ img {
   }
 }
 
-.form__name {
+.review__form .wpcf7-text {
   width: 540px;
   height: 64px;
   padding-left: 15px;
@@ -295,7 +288,7 @@ img {
   }
 }
 
-.form__button {
+.wpcf7-submit {
   width: 285px;
   height: 64px;
   border-radius: 8px;

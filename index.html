@@ -93,14 +93,26 @@
       <section class="review">
         <div class="review__container">
           <h2 class="review__title">Оставить отзыв</h2>
-          <form class="review__form form" action="#">
-            <textarea class="form__text" placeholder="Расскажите, что вы думаете о проекте" name="emotions" required></textarea>
-            <input class="form__name" type="text" placeholder="Ваше имя" required>
-            <div class="form__button-wrapper">
-              <button class="form__button" type="submit">Отправить</button>
-              <span class="form__button-wrapper-text">Отзыв будет добавлен после проверки модератором</span>
+          <div class="review__form">
+            <div class="wpcf7">
+              <form class="wpcf7-form" action="#">
+                <p>
+                  <span class="wpcf7-form-control-wrap">
+                   <textarea class="wpcf7-textarea" placeholder="Расскажите, что вы думаете о проекте" name="emotions" maxlength="400" required></textarea>
+                  </span>
+                </p>
+                <p>
+                  <span class="wpcf7-form-control-wrap">
+                    <input class="wpcf7-text" type="text" placeholder="Ваше имя" size="40" maxlength="40" required>
+                  </span>
+                </p>
+                <div class="form__button-wrapper">
+                  <button class="wpcf7-submit" type="submit">Отправить</button>
+                  <div class="form__button-wrapper-text">Отзыв будет добавлен после проверки модератором</div>
+                </div>
+              </form>
             </div>
-          </form>
+          </div>
           <ul class="review__list list">
             <li class="list__item">
               <div class="list__item-image-wrapper">
