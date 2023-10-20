@@ -10,33 +10,35 @@
 
 <body>
   <header class="header">
-    <nav class="navigation">
-      <a>
-        <img src="images/logo.png" width="262" height="47" alt="">
+    <div class="navigation">
+      <a class="navigation__logo" href="#">
+        <img src="images/logo.png" width="262" height="47" alt="Иконка стилизованной лестницы с перилами, люстрой и горшком с растением. Справа надпись Interior Lounge Дизайн общественных пространств.">
       </a>
-      <ul class="navigation__list">
-        <li class="navigation__item navigation__item--submenu">
-          <a class="navigation__link" href="#">Наши проекты</a>
-          <ul class="navigation__sublist sublist">
-            <li class="sublist__item">
-              <a class="sublist__link" href="#">Tomazzi Hall</a>
-            </li>
-            <li class="sublist__item">
-              <a class="sublist__link" href="#">Longe Hall</a>
-            </li>
-            <li class="sublist__item">
-              <a class="sublist__link" href="#">Astra Hall</a>
-            </li>
-          </ul>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Контакты</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link navigation__link--button" href="#">Оставить отзыв</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="menu-primary-container">
+        <ul class="menu">
+          <li class="menu-item menu-item-has-children">
+            <a href="#">Наши проекты</a>
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a href="#">Tomazzi Hall</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Longe Hall</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Astra Hall</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#">Контакты</a>
+          </li>
+          <li class="menu-item">
+            <button type="button">Оставить отзыв</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>

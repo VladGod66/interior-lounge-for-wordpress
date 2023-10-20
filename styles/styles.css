@@ -63,11 +63,12 @@ img {
   margin: 0 auto;
   margin-bottom: 75px;
 
-  & li .sublist {
+  & .sub-menu {
     display: none;
     position: absolute;
-    width: 170px;
-    min-height: 90px;
+    top: 38px;
+    width: 200px;
+    min-height: 99px;
     background-color: #ffffff;
     padding: 0;
     padding-top: 10px;
@@ -76,7 +77,7 @@ img {
     z-index: 1;
   }
 
-  & li:hover .sublist {
+  & li:hover .sub-menu {
     display: block;
   }
 
@@ -86,36 +87,42 @@ img {
   }
 }
 
-.navigation__list {
+.navigation__logo:hover {
+  opacity: 70%;
+}
+
+.menu-primary-container .menu {
  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.navigation__item {
+.menu-primary-container .menu-item {
+  display: inline-flex;
   margin-right: 60px;
+  align-items: center;
 
   &:last-child {
     margin: 0;
   }
+}
 
-  &--submenu {
-    position: relative;
+.menu-primary-container .menu-item-has-children {
+  position: relative;
 
-    &::after {
-      position: absolute;
-      content: "";
-      width: 13px;
-      height: 9px;
-      background-image: url("../images/polygon1.svg");
-      right: -18px;
-      top: 11px;
-    }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 9px;
+    background-image: url("../images/polygon1.svg");
+    right: -18px;
+    top: 19px;
   }
 }
 
-.navigation__link {
+.menu-primary-container .menu-item a {
   text-decoration: none;
   color: #000000;
 
@@ -124,26 +131,37 @@ img {
   }
 }
 
-.navigation__link--button {
+.menu .menu-item:last-child button {
   box-sizing: border-box;
   min-width: 191px;
   padding: 8px 34px;
   border: 1px solid #9F7303;
   border-radius: 8px;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif, "Arial";
+  font-size: 18px;
+  line-height: 27px;
+  cursor: pointer;
+
+  &:hover {
+    color: #9F7303;
+  }
 }
 
-.sublist__item:first-child a {
-  color: #9F7303;
-}
-
-.sublist__link {
+.sub-menu .menu-item a {
   padding-left: 10px;
+  padding-bottom: 5px;
+  line-height: 27px;
   text-decoration: none;
   color: #000000;
 
   &:hover {
     color: #9F7303;
   }
+}
+
+.sub-menu .menu-item:first-child a {
+  color: #9F7303;
 }
 
 .main__container {
