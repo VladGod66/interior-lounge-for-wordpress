@@ -73,8 +73,20 @@ img {
   }
 }
 
-.navigation__logo:hover {
-  opacity: 70%;
+.navigation__logo {
+  opacity: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation__logo:hover,
+.navigation__logo:focus {
+  opacity: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation__logo:active {
+  opacity: 100%;
+  transition: none;
 }
 
 .menu-primary-container .menu {
@@ -130,6 +142,7 @@ img {
 
     &:hover {
       color: #9F7303;
+      transition: all 0.3s ease-in-out;
     }
   }
 }
@@ -318,9 +331,16 @@ img {
   font-size: 18px;
   line-height: 27px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
-    opacity: 70%;
+    opacity: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:active {
+    opacity: 100%;
+    transition: none;
   }
 }
 
